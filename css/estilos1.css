@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+header .container-fondo {
+   position: fixed;
+   background-color: black;
+   width: 100%; height: 35%;
+   text-align: justify;
+   border: 5px solid grey;
+   border-radius: 7px;
+   margin-top: 1px;
+   padding-top: 1em;
+   padding-bottom: 1em;
+	}
+
+  
+section {
+  width: 100%;
+}
+
+article { color: black; font-size: 20px; padding: 10px; padding-top: 14em;
+  display: inline-block; box-sizing: content-box;
+}
+
+/*.solo {	color: yellow; text-decoration: none; text-align: center; display: inline-block; 
+	background-color: black;box-sizing: content-box;
+	font-size: 15px; margin: 10px; border-radius: 15px; border: 8px outset grey; }*/
+
+.wrap {
+  width: 100%;
+  max-width: 250px;
+  max-height: 250px;
+  margin: auto;
+}
+
+.widget {
+  width: 100%;
+  margin-top: 0em;
+  background-color:transparent;
+  float: left;
+  border-radius: 12px;
+  /*marin:32px*/
+}
+
+.widget p {
+  display: inline-block;
+  line-height: .1em;
+}
+
+.fecha {
+  font-family: Oswald, Arial;
+  text-align: left;
+  font-size: 1em;
+  color: cyan;
+  /*margin-bottom: 5px;
+  background: rgba(0,0,0,.5);*/
+  background: transparent;
+  padding: 15px;
+  width: 90%;
+}
+
+.reloj {
+  font-family: Oswald, Arial;
+  width: 90%;
+  padding: 1px;
+  font-size: 2em;
+  text-align: left;
+  /*background: rgba(0,0,0,.5);
+  background: transparent;*/
+}
+
+.horas {
+  background: transparent;
+  font-size: 1.5rem;
+    display: inline-block;
+    color: cyan ;
+}
+
+.minutos {
+  background: transparent;
+  font-size: 1.5rem;
+    display: block;
+    color: cyan;
+}
+
+.reloj .caja-segundos {
+  display: inline-block;
+}
+
+.reloj .segundos {
+  font-size: 1.5rem;
+  display: inline-block;
+  color:white;/*
+  background: black;
+  border-radius: 2px;*/
+}
+
+.reloj .ampm {
+  font-size: .8rem;
+  display: inline-block;
+  color:yellow;/*
+  background: black;
+  border-radius: 2px;*/
+}
+
+.reloj .puntos {
+  font-size: 1.5rem;
+  display: inline-block;
+  color:yellow;
+}
+
+/*.fondo {
+  width: 1500px;
+  padding: 10px;
+  /*background-color: darkblue;*/
+ /* border: 10px solid grey;
+  border-radius: 5px;
+  margin-top: 25px;*/
+/*}*/
+
+.usuario {
+  background-color: white;
+}
+
+div .modal-header.azul {
+  background-color:blue;
+  color: white;
+}
+
+.sombra {
+  color: white;
+  text-shadow: -10px -8px 5px #050505;
+  font-size: 30px;
+  font-family: 'Unna', serif;
+  text-align: right;
+}
+
+.sombra1 {
+  color: yellow;
+  text-shadow: -12px -10px 5px white;
+  font-size: 30px;
+  font-family: 'Unna', serif;
+  text-align: auto;
+}
+
+.sombra2 {
+  color: black;
+  text-shadow: -12px -10px 5px black;
+  font-size: 40px;
+  font-family: 'Unna', serif;
+  text-align: center;
+}
+
+a {
+  color: lightblue;
+  display: inline-block;
+  background-color: black;
+  box-sizing: content-box;
+  font-size: 15px;
+  margin: 4px;
+  border-radius: 4px;
+  border: 5px outset black;
+  text-decoration:none;
+}
+
+a:hover {
+  color: yellow;
+  transition: .5s;
+  text-decoration: none;
+}
+.table-cebra {
+  border: solid 5px grey;
+  border-spacing: 0;
+  text-align: center;
+}
+
+.table-cebra thead tr {
+  background-color: wheat;
+  color: whitesmoke;
+}
+
+.table-cebra th {
+  /*min-width: 0.2rem;
+  padding: 1.2rem;*/
+  font-size: 19px;
+  border: 2px solid grey;
+  background-color: lightblue;
+}
+
+.table-cebra td {
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
+  border: 1PX solid grey;
+  min-width: 80px;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 16px;
+ 
+}
+
+.table-cebra th:last-child,
+.table-cebra td:last-child {
+  
+  border-right: 0;
+}
+
+.table-cebra tbody tr {
+  background: wheat;
+}
+
+.table-cebra tbody tr:nth-child(2n) {
+  background: lightblue;
+}
+
+.table-cebra tbody tr:hover {
+  background: wheat;
+}
+
