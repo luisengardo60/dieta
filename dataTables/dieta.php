@@ -74,6 +74,7 @@
             <th style="background-color: brown; color:white">3.- Grasa</th>
             <th style="background-color: brown; color:white">4.- Entre comidas</th>
             <th style="background-color: brown; color:white">5.- No comer</th>
+            <th style="background-color: brown; color:white">5.- Glosario</th>
           </tr>
         </thead>
         <tbody>
@@ -84,6 +85,7 @@
           <td><b>Proporción 70%</b> Aguacates, Aceitunas, Nueces, Mantequilla, Quesos Amarillos, Queso Ricota, Requeson, Tocineta, Aceite de Coco, Chorizos, Aceite de Oliva</td>
           <td>Chicharrones, un trozo de aguacate, Aceitunas, Queso Amarillo, nueces</td>
           <td>Pastas, Arroz, carne roja, margarina, azucar, pan, lacteos, aceite de semillas, papas</td>
+          <td>CPG1 Carbohidratos comida 1 / CPG2 Carbohidratos comida 2</td>
           </tr>
         </tbody>
       </table>
