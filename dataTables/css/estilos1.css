@@ -5,7 +5,7 @@ body {
 }
 
 header .container-fondo {
-   position: fixed;
+   /*position: fixed;*/
    background-color: black;
    width: 100%; height: 35%;
    text-align: justify;
