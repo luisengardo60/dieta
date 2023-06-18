@@ -2,9 +2,9 @@
 include("conexion.php");
 include("funciones.php");
 
-if (isset($_POST["id_usuario"])) {
+if (isset($_POST["id"])) {
     $salida = array();
-    $stmt = $conexion->prepare("SELECT * FROM luise WHERE id = '".$_POST["id_usuario"]."' LIMIT 1");
+    $stmt = $conexion->prepare("SELECT * FROM luise WHERE id = '".$_POST["id"]."' LIMIT 1");
     $stmt->execute();
     $resultado = $stmt->fetchAll();
     foreach($resultado as $fila){

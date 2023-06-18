@@ -11,9 +11,9 @@
   }
 }
 
-function obtener_nombre_imagen($id_usuario){
+function obtener_nombre_imagen($id){
   include('conexion.php');
-  $stmt = $conexion->prepare("SELECT imagen FROM luise WHERE id = '$id_usuario'");
+  $stmt = $conexion->prepare("SELECT imagen FROM luise WHERE id = '$id'");
   $stmt->execute();
   $resultado = $stmt->fetchAll();
   foreach($resultado as $fila){

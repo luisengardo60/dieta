@@ -89,6 +89,30 @@
           </tr>
         </tbody>
       </table>
+
+      <table id="datos_usuario" class="table-cebra">
+        <thead>
+        <tr>
+            <th style="background-color: brown; color:white">Lunes</th>
+            <th style="background-color: brown; color:white">Martes</th>
+            <th style="background-color: brown; color:white">Miércoles</th>
+            <th style="background-color: brown; color:white">Jueves</th>
+            <th style="background-color: brown; color:white">Viernes</th>
+            <th style="background-color: brown; color:white">Sábado</th>
+            <th style="background-color: brown; color:white">Domingo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>A.- Tracción y empuje - Brazos - Abdominales</b></td>
+            <td>B.- Piernas - Aerobics</td>
+            <td><b>A.- Tracción y empuje - Brazos - Abdominales</b></td>
+            <td>Descanso</td>
+            <td>B.- Piernas - Aerobics</td>
+            <td><b>A.- Tracción y empuje - Brazos - Abdominales</b></td>
+            <td>Descanso</td>
+          </tr>
+        </tbody>
      
     </div>
     
@@ -127,7 +151,7 @@
               </div>
 
               <div class="modal-footer">
-                <input type="hidden" name="id_usuario" id="id_usuario">
+                <input type="hidden" name="id" id="id">
                 <input type="hidden" name="operacion" id="operacion">
                 <input type="submit" name="action" id="action" class="btn btn-success" value="Crear">
               </div>
@@ -150,7 +174,8 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
 
     <script type="text/javascript">
       $(document).ready(function() {
@@ -221,12 +246,12 @@
 
       //Funcion de editar
       $(document).on('click', '.editar', function() {
-        var id_usuario = $(this).attr("id");
+        var id = $(this).attr("id");
         $.ajax({
           url: "obtener_registro.php",
           method: "POST",
           data: {
-            id_usuario: id_usuario
+            id: id
           },
           dataType:"json",
           success: function(data)
@@ -240,7 +265,7 @@
             $('#comentario').val(data.comentario);
             $('#peso').val(data.peso);
             $('.modal-title').text("Editar Usuario");
-            $('#id_usuario').val(id_usuario);
+            $('#id').val(id);
             //$('#imagen_subida').html(data.imagen_usuario);
             $('#action').val("Salvar");
             $('#operacion').val("Editar");
@@ -255,13 +280,13 @@
 
       //Funcion borrar
       $(document).on('click', '.borrar', function() {
-        var id_usuario = $(this).attr("id");
-        if (confirm("Esta seguro de borrar este registro" + id_usuario)) {
+        var id = $(this).attr("id");
+        if (confirm("Esta seguro de borrar este registro" + id)) {
           $.ajax({
             url: "borrar.php",
             method: "POST",
             data: {
-              id_usuario: id_usuario
+              id: id
             },
             success: function(data) {
               alert(data);

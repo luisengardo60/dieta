@@ -3,9 +3,9 @@
 include("conexion.php");
 include("funciones.php");
 
-if (isset($_POST["id_usuario"])) 
+if (isset($_POST["id"])) 
 {
- /* $imagen = obtener_nombre_imagen($_POST["id_usuario"]);
+ /* $imagen = obtener_nombre_imagen($_POST["id"]);
   if ($imagen != '')
   {
     unlink("img/" . $imagen);
@@ -14,7 +14,7 @@ if (isset($_POST["id_usuario"]))
 
   $resultado = $stmt->execute(
     array(
-       ':id'            => $_POST["id_usuario"]
+       ':id'            => $_POST["id"]
     )
     );
 
